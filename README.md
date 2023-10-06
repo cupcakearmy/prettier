@@ -3,13 +3,13 @@
 ## Installation
 
 ```bash
-pnpm add -D cupcakearmy-prettier
+pnpm add -D @nicco.io/prettier
 ```
 
 ```javascript
 // .prettierrc.js
 
-import config from 'cupcakearmy-prettier'
+import config from '@nicco.io/prettier'
 
 export default {
   ...config,
