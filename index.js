@@ -6,5 +6,5 @@ export default {
   trailingComma: 'all',
 
   plugins: ['@ianvs/prettier-plugin-sort-imports', 'prettier-plugin-packagejson'],
-  importOrder: ['<BUILT_IN_MODULES>', '', '<THIRD_PARTY_MODULES>', '', '^[.]'],
+  importOrder: ['<BUILT_IN_MODULES>', '', '<THIRD_PARTY_MODULES>', '', '^[@$]', '', '^[.]'],
 }
