@@ -18,6 +18,21 @@ export default {
 
 ## Included
 
-- Sort imports
-- Sort package.json
+- [Sort imports](https://github.com/IanVS/prettier-plugin-sort-imports)
+- [Sort package.json](https://github.com/matzkoh/prettier-plugin-packagejson)
 - Some custom preference settings
+
+## Recipes
+
+### Svelte
+
+```js
+// .prettierrc.js
+import preset from '@nicco.io/prettier'
+
+export default {
+  ...preset,
+  overrides: [{ files: '*.svelte', options: { parser: 'svelte' } }],
+  plugins: [...preset.plugins, 'prettier-plugin-svelte'],
+}
+```
