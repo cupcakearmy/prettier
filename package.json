@@ -12,10 +12,10 @@
   "author": "Niccolo Borgioli <hi@nicco.io>",
   "type": "module",
   "exports": {
-    ".": "./.prettierrc.js"
+    ".": "./.prettierrc.mjs"
   },
   "files": [
-    "./.prettierrc.js"
+    "./.prettierrc.mjs"
   ],
   "dependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.6.1",
@@ -24,6 +24,9 @@
   },
   "devDependencies": {
     "prettier": "^3.6.2"
+  },
+  "peerDependencies": {
+    "prettier": "^3"
   },
   "packageManager": "pnpm@10.14.0",
   "publishConfig": {
