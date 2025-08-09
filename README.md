@@ -9,7 +9,7 @@ pnpm add -D @nicco.io/prettier
 ```javascript
 // .prettierrc.js
 
-import config from '@nicco.io/prettier'
+import config from "@nicco.io/prettier"
 
 export default {
   ...config,
@@ -20,6 +20,7 @@ export default {
 
 - [Sort imports](https://github.com/IanVS/prettier-plugin-sort-imports)
 - [Sort package.json](https://github.com/matzkoh/prettier-plugin-packagejson)
+- [Tailwind](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
 - Some custom preference settings
 
 ## Recipes
@@ -28,11 +29,11 @@ export default {
 
 ```js
 // .prettierrc.js
-import preset from '@nicco.io/prettier'
+import preset from "@nicco.io/prettier"
 
 export default {
   ...preset,
-  overrides: [{ files: '*.svelte', options: { parser: 'svelte' } }],
-  plugins: [...preset.plugins, 'prettier-plugin-svelte'],
+  overrides: [{ files: "*.svelte", options: { parser: "svelte" } }],
+  plugins: [...preset.plugins, "prettier-plugin-svelte"],
 }
 ```

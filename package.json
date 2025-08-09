@@ -1,6 +1,6 @@
 {
   "name": "@nicco.io/prettier",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Personal Prettier config",
   "keywords": [
     "prettier",
@@ -12,15 +12,20 @@
   "author": "Niccolo Borgioli <hi@nicco.io>",
   "type": "module",
   "exports": {
-    ".": "./index.js"
+    ".": "./.prettierrc.js"
   },
   "files": [
-    "./index.js"
+    "./.prettierrc.js"
   ],
   "dependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "^4.1.0",
-    "prettier-plugin-packagejson": "^2.4.6"
+    "@ianvs/prettier-plugin-sort-imports": "^4.6.1",
+    "prettier-plugin-packagejson": "^2.5.19",
+    "prettier-plugin-tailwindcss": "^0.6.14"
   },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "packageManager": "pnpm@10.14.0",
   "publishConfig": {
     "access": "public"
   }
